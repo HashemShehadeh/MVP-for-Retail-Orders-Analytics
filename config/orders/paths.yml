@@ -1,0 +1,18 @@
+base: "/content/MVP"
+
+folders:
+  mdm: "/content/MVP/db_mdm"
+  prd: "/content/MVP/db_prd"
+  dw: "/content/MVP/db_dw"
+  audit: "/content/MVP/audit"
+  staged: "/content/MVP/db_stg"
+  raw: "/content/MVP/raw_data_fs/lz"
+  data: "/content/MVP/data"
+  report: "/content/MVP/data_quality_report"
+  processed: "/content/MVP/raw_data_fs/processed"
+  archived: "/content/MVP/raw_data_fs/archived"
+
+files:
+  prd_file: "/content/MVP/db_prd/prd_orders.csv"
+  audit_log: "/content/MVP/audit/audit_log.csv"
+  merge_audit_log: "/content/MVP/audit/merge_audit_log.csv"

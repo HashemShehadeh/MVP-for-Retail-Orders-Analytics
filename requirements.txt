@@ -1,0 +1,10 @@
+dependencies:
+
+pip install pysftp pyyaml
+pandas
+psycopg2-binary
+paramiko
+pyyaml
+apache-airflow==2.7.1
+xlsxwriter
+python-dateutil

@@ -1,0 +1,70 @@
+checks:
+  - name: "missing_order_id"
+    type: "null_or_empty"
+    column: "order_id"
+
+  - name: "missing_customer_id"
+    type: "null_or_empty"
+    column: "customer_id"
+
+  - name: "missing_order_date"
+    type: "null_or_empty"
+    column: "order_date"
+
+  - name: "missing_ship_date"
+    type: "null_or_empty"
+    column: "ship_date"
+
+  - name: "missing_quantity"
+    type: "null"
+    column: "quantity"
+
+  - name: "missing_sales"
+    type: "null"
+    column: "sales"
+
+  - name: "missing_profit"
+    type: "null"
+    column: "profit"
+
+  - name: "missing_discount"
+    type: "null"
+    column: "discount"
+
+  - name: "order_date_not_ddmmyyyy"
+    type: "date_format"
+    column: "order_date"
+    format: "DD/MM/YYYY"
+
+  - name: "ship_date_not_ddmmyyyy"
+    type: "date_format"
+    column: "ship_date"
+    format: "DD/MM/YYYY"
+
+  - name: "negative_quantity"
+    type: "negative"
+    column: "quantity"
+
+  - name: "negative_sales"
+    type: "negative"
+    column: "sales"
+
+  - name: "negative_profit"
+    type: "negative"
+    column: "profit"
+
+  - name: "negative_discount"
+    type: "negative"
+    column: "discount"
+
+  - name: "zero_quantity"
+    type: "zero"
+    column: "quantity"
+
+  - name: "zero_sales"
+    type: "zero"
+    column: "sales"
+
+  - name: "quantity_not_integer"
+    type: "integer"
+    column: "quantity"
